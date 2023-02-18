@@ -9,7 +9,7 @@
   
   ### 
   * The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, paddings, and the actual content.
-    ![CSS Box Model](assets/css-box-model.jpg)
+  * ![CSS Box Model](assets/css-box-model.jpg)
   * The main goal of asking this question is to see if the developer understands how the width and height of an HTML element is calculated on browser.
   * There are two types of CSS boxes: 
     * Content Box (Default) 
