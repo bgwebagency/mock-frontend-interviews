@@ -9,8 +9,9 @@
   <body>
     <style>
       .box1 {
+        /* box-sizing: content-box */
         width: 300px;
-        height: 300px;
+        height: 300px; /* width and height property in CSS is applied to the content only */
         background-color: #f1f1f1;
         padding: 20px;
         margin: 20px;
@@ -29,27 +30,31 @@
         /* Final width = 300 */
         /* Final height = 300 */
       }
+
+      /* This is a standard practice to use `box-sizing: border-box` for all the elements on your HTML. */
+      /* * {
+        box-sizing: border-box;
+      } */
     </style>
+
     <!-- Div with CSS box model set to default i.e box-sizing content-box -->
     <div class="box1">
-      <h1>Box Model</h1>
+      <h1>Content Box (Default)</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
         voluptates, quod, quia, voluptatibus quae voluptatem quibusdam
         voluptatum quidem quos quas nesciunt. Quisquam, quae. Quisquam
-        voluptates, quod, quia, voluptatibus quae voluptatem quibusdam
-        voluptatum quidem quos quas nesciunt. Quisquam, quae.
+        voluptates, quod, quia.
       </p>
     </div>
     <!-- Div with CSS box model set to default i.e box-sizing border-box -->
     <div class="box2">
-      <h1>Box Model</h1>
+      <h1>Border Box (Recommended)</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
         voluptates, quod, quia, voluptatibus quae voluptatem quibusdam
         voluptatum quidem quos quas nesciunt. Quisquam, quae. Quisquam
-        voluptates, quod, quia, voluptatibus quae voluptatem quibusdam
-        voluptatum quidem quos quas nesciunt. Quisquam, quae.
+        voluptates, quod, quia.
       </p>
     </div>
   </body>
