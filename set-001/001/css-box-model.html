@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+  </head>
+  <body>
+    <style>
+      .box1 {
+        width: 300px;
+        height: 300px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #000;
+        /* Final width = 300 + 20 + 20 + 1 + 1 = 342 */
+        /* Final height = 300 + 20 + 20 + 1 + 1 = 342 */
+      }
+      .box2 {
+        width: 300px;
+        height: 300px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        /* Final width = 300 */
+        /* Final height = 300 */
+      }
+    </style>
+    <!-- Div with CSS box model set to default i.e box-sizing content-box -->
+    <div class="box1">
+      <h1>Box Model</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptates, quod, quia, voluptatibus quae voluptatem quibusdam
+        voluptatum quidem quos quas nesciunt. Quisquam, quae. Quisquam
+        voluptates, quod, quia, voluptatibus quae voluptatem quibusdam
+        voluptatum quidem quos quas nesciunt. Quisquam, quae.
+      </p>
+    </div>
+    <!-- Div with CSS box model set to default i.e box-sizing border-box -->
+    <div class="box2">
+      <h1>Box Model</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptates, quod, quia, voluptatibus quae voluptatem quibusdam
+        voluptatum quidem quos quas nesciunt. Quisquam, quae. Quisquam
+        voluptates, quod, quia, voluptatibus quae voluptatem quibusdam
+        voluptatum quidem quos quas nesciunt. Quisquam, quae.
+      </p>
+    </div>
+  </body>
+</html>
